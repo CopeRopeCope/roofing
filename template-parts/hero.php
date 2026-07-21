@@ -14,161 +14,124 @@ $hero_image = get_template_directory_uri() . '/assets/images/hero/hero-placehold
 
 <section class="hero">
 
-    <div class="hero__background">
+	<div class="container">
 
-        <img
-            src="<?php echo esc_url( $hero_image ); ?>"
-            alt="ALS Roofing Pavlović"
-            class="hero__image">
+		<div class="hero__wrapper">
 
-        <div class="hero__overlay"></div>
+			<div class="hero__content">
 
-    </div>
+				<span class="hero__eyebrow">
+					Profesionalni limarski radovi
+				</span>
 
-    <div class="container">
+				<h1 class="hero__title">
+					Limarski radovi<br>
+					koji traju godinama.
+				</h1>
 
-        <div class="hero__content">
+				<p class="hero__description">
+					Profesionalna izrada i montaža limenih krovova,
+					oluka, opšivki, vetar lajsni i svih vrsta
+					limarskih radova na teritoriji cele Srbije.
+				</p>
 
-            <span class="hero__eyebrow">
+				<ul class="hero__features">
 
-                Profesionalni limarski radovi
+					<li>
+						<span class="hero__check">✓</span>
+						Limeni krovovi
+					</li>
 
-            </span>
+					<li>
+						<span class="hero__check">✓</span>
+						Oluci i vertikale
+					</li>
 
-            <h1 class="hero__title">
+					<li>
+						<span class="hero__check">✓</span>
+						Opšivke i dimnjaci
+					</li>
 
-                Limarski radovi <br> koji traju godinama.
+					<li>
+						<span class="hero__check">✓</span>
+						Garancija na izvedene radove
+					</li>
 
-            </h1>
+				</ul>
 
-            <p class="hero__description">
+				<div class="hero__buttons">
 
-                Profesionalna izrada i montaža limenih krovova,
-                oluka, opšivki, vetar lajsni i svih vrsta
-                limarskih radova na teritoriji cele Srbije.
+					<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary">
+						Zatražite ponudu
+					</a>
 
-            </p>
+					<a href="tel:+381653305499" class="btn btn--secondary">
+						Pozovite odmah
+					</a>
 
-            <ul class="hero__features">
+				</div>
 
-                <li>
-                    <span class="hero__check">✓</span>
-                    Limeni krovovi
-                </li>
+			</div>
 
-                <li>
-                    <span class="hero__check">✓</span>
-                    Oluci i vertikale
-                </li>
+			<div class="hero__media">
 
-                <li>
-                    <span class="hero__check">✓</span>
-                    Opšivke i dimnjaci
-                </li>
+				<img
+					src="<?php echo esc_url( $hero_image ); ?>"
+					alt="Limarski radovi"
+					class="hero__photo">
 
-                <li>
-                    <span class="hero__check">✓</span>
-                    Garancija na izvedene radove
-                </li>
+			</div>
 
-            </ul>
+		</div>
 
-            <div class="hero__buttons">
+		<div class="hero__stats">
 
-                <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>"
-                   class="btn btn--primary">
+			<div class="hero__stats-grid">
 
-                    Zatražite ponudu
+				<div class="hero__stat">
 
-                </a>
+					<span class="hero__number">5+</span>
 
-                <a href="tel:+381653305499"
-                   class="btn btn--secondary">
+					<span class="hero__label">
+						Godina iskustva
+					</span>
 
-                    Pozovite odmah
+				</div>
 
-                </a>
+				<div class="hero__stat">
 
-            </div>
+					<span class="hero__number">100+</span>
 
-        </div>
+					<span class="hero__label">
+						Završenih projekata
+					</span>
 
-    </div>
+				</div>
 
-    <div class="hero__stats">
+				<div class="hero__stat">
 
-        <div class="container">
+					<span class="hero__number">Srbija</span>
 
-            <div class="hero__stats-grid">
+					<span class="hero__label">
+						Radimo širom zemlje
+					</span>
 
-                <div class="hero__stat">
+				</div>
 
-                    <span class="hero__number">
+				<div class="hero__stat">
 
-                        5+
+					<span class="hero__number">100%</span>
 
-                    </span>
+					<span class="hero__label">
+						Posvećenost kvalitetu
+					</span>
 
-                    <span class="hero__label">
+				</div>
 
-                        Godina iskustva
+			</div>
 
-                    </span>
+		</div>
 
-                </div>
-
-                <div class="hero__stat">
-
-                    <span class="hero__number">
-
-                        100+
-
-                    </span>
-
-                    <span class="hero__label">
-
-                        Završenih projekata
-
-                    </span>
-
-                </div>
-
-                <div class="hero__stat">
-
-                    <span class="hero__number">
-
-                        Srbija
-
-                    </span>
-
-                    <span class="hero__label">
-
-                        Radimo širom zemlje
-
-                    </span>
-
-                </div>
-
-                <div class="hero__stat">
-
-                    <span class="hero__number">
-
-                        100%
-
-                    </span>
-
-                    <span class="hero__label">
-
-                        Posvećenost kvalitetu
-
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+	</div>
 
 </section>
