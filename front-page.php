@@ -16,9 +16,12 @@ get_header();
 
 	<?php get_template_part( 'template-parts/hero' ); ?>
 
+	<?php get_template_part( 'template-parts/process' ); ?>
+
 	<?php get_template_part( 'template-parts/about' ); ?>
+
+	<?php get_template_part( 'template-parts/services' ); ?>
 
 </main>
 
-<?php
-get_footer();
+<?php get_footer(); ?>

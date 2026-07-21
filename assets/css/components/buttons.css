@@ -1,17 +1,22 @@
 .btn {
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display:inline-flex;
 
-    padding: 18px 38px;
+    align-items:center;
 
-    border-radius: 10px;
+    justify-content:center;
 
-    font-weight: 600;
-    font-size:17px;
+    min-height:52px;
 
-    transition: all .3s ease;
+    padding:0 30px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    text-decoration:none;
 
 }
 

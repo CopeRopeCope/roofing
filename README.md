@@ -1,3 +1,26 @@
+# Lim+ Pavlović Theme
+
+Custom WordPress theme.
+
+## Version
+
+0.1.0
+
+## Technologies
+
+- WordPress
+- PHP
+- CSS
+- JavaScript
+
+## Structure
+
+assets/
+inc/
+template-parts/
+
+...
+
 # 🚀 Uputstvo za instalaciju WordPress teme
 
 Pratite sledeće korake kako biste uspešno postavili i aktivirali temu na svom lokalnom WordPress sajtu.
@@ -95,3 +118,4 @@ Da bi WordPress prikazivao tvoj custom dizajn umesto blog objava, uradi sledeće
 ### 🌐 Korak 8 - Testiranje
 Otvori svoj pretraživač i poseti adresu tvog lokalnog sajta:
 * `http://localhost` ili `https://ime-sajta.local`
+

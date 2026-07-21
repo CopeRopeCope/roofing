@@ -1,27 +1,59 @@
 :root{
 
+    /* Brand */
+
     --color-primary:#F97316;
     --color-primary-hover:#EA580C;
 
+    /* Neutral */
+
     --color-dark:#111827;
+    --color-dark-2:#1F2937;
 
     --color-text:#4B5563;
+    --color-muted:#6B7280;
 
     --color-light:#F8FAFC;
+    --color-white:#FFFFFF;
 
     --color-border:#E5E7EB;
 
-    --color-white:#FFFFFF;
+    /* Layout */
 
     --container:1280px;
-
     --header-height:90px;
 
+    /* Radius */
+
+    --radius-sm:12px;
+    --radius-md:18px;
+    --radius-lg:24px;
+
+    /* (zadržavamo zbog kompatibilnosti) */
     --radius:12px;
+
+    /* Shadows */
+
+    --shadow-sm:0 10px 25px rgba(0,0,0,.08);
+    --shadow-md:0 20px 45px rgba(0,0,0,.12);
+    --shadow-lg:0 30px 70px rgba(0,0,0,.18);
+
+    /* (zadržavamo zbog starog koda) */
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    /* Animation */
 
     --transition:.30s ease;
 
-    --shadow:
-        0 15px 35px rgba(0,0,0,.08);
+    /* Spacing */
+
+    --section-spacing:100px;
+    --section-spacing-sm:70px;
+
+    /* Z-index */
+
+    --z-header:1000;
+    --z-overlay:900;
+    --z-modal:2000;
 
 }

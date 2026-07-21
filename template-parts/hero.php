@@ -25,14 +25,12 @@ $hero_image = get_template_directory_uri() . '/assets/images/hero/krov.webp';
 				</span>
 
 				<h1 class="hero__title">
-					Limarski radovi<br>
-					koji traju godinama.
+					Krovovi, limarija i fasade -<br>
+					kvalitet koji traje.
 				</h1>
 
 				<p class="hero__description">
-					Profesionalna izrada i montaža limenih krovova,
-					oluka, opšivki, vetar lajsni i svih vrsta
-					limarskih radova na teritoriji cele Srbije.
+					Izrada novih krovova, limarski radovi, fasade, sanacije i adaptacije objekata širom Srbije.
 				</p>
 
 				<ul class="hero__features">

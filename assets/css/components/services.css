@@ -1,0 +1,21 @@
+.services {
+    background: var(--color-light);
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.service-card {
+    padding: 35px;
+}
+
+.service-card h3 {
+    margin-bottom: 16px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+}
