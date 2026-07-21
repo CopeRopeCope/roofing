@@ -50,14 +50,26 @@ $hero_image = get_template_directory_uri() . '/assets/images/hero/hero-placehold
             </p>
 
             <ul class="hero__features">
-				<span class="hero__check"></span>
-                Limeni krovovi
 
-                <li>✔ Oluci i vertikale</li>
+                <li>
+                    <span class="hero__check">✓</span>
+                    Limeni krovovi
+                </li>
 
-                <li>✔ Opšivke i dimnjaci</li>
+                <li>
+                    <span class="hero__check">✓</span>
+                    Oluci i vertikale
+                </li>
 
-                <li>✔ Garancija na izvedene radove</li>
+                <li>
+                    <span class="hero__check">✓</span>
+                    Opšivke i dimnjaci
+                </li>
+
+                <li>
+                    <span class="hero__check">✓</span>
+                    Garancija na izvedene radove
+                </li>
 
             </ul>
 
