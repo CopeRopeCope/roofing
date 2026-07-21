@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$hero_image = get_template_directory_uri() . '/assets/images/hero/hero-placeholder.jpg';
+$hero_image = get_template_directory_uri() . '/assets/images/hero/krov.webp';
 ?>
 
 <section class="hero">
