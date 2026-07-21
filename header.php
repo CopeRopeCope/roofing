@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<a href="<?php echo esc_url( home_url() ); ?>" class="header__logo">
 
-						ALS Roofing <span>Pavlović</span>
+						Lim+ <span>Pavlović</span>
 
 					</a>
 

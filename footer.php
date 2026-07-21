@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <p>
             &copy; <?php echo esc_html( wp_date( 'Y' ) ); ?>
-            ALS Roofing Pavlović.
+            Lim+ Pavlović.
             Sva prava zadržana.
         </p>
 
