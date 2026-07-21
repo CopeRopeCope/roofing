@@ -49,9 +49,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<ul class="service-card__list">
 
-					<li>Novi krovovi</li>
-					<li>Rekonstrukcija</li>
-					<li>Sanacija</li>
+					<li>✔ Novi krovovi</li>
+                    <li>✔ Rekonstrukcija</li>
+                    <li>✔ Sanacija</li>
 
 				</ul>
 
