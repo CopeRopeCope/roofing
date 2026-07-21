@@ -1,0 +1,209 @@
+/* ==========================================================
+   Header
+   ========================================================== */
+
+.header {
+
+    position: fixed;
+    
+    inset: 0 0 auto 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    transition: all .35s ease;
+    
+    padding:20px 0;
+
+}
+
+.header--scrolled {
+
+    background: rgba(255,255,255,.96);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow: var(--shadow);
+
+}
+
+.header__inner {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: var(--header-height);
+
+}
+
+.header__branding {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.header__logo {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #fff;
+
+    transition: var(--transition);
+
+}
+
+.header--scrolled .header__logo {
+
+    color: var(--color-dark);
+
+}
+
+.header__logo span {
+
+    color: var(--color-primary);
+
+}
+
+.header__nav {
+
+    display: flex;
+
+}
+
+.header__nav ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+
+}
+
+.header__nav a {
+
+    position: relative;
+
+    color: #fff;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.header--scrolled .header__nav a {
+
+    color: var(--color-dark);
+
+}
+
+.header__nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--color-primary);
+
+    transition: var(--transition);
+
+}
+
+.header__nav a:hover {
+
+    color: var(--color-primary);
+
+}
+
+.header__nav a:hover::after {
+
+    width: 100%;
+
+}
+
+.header__actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.header__phone {
+
+    font-weight: 700;
+
+    color: #fff;
+
+    transition: var(--transition);
+
+}
+
+.header--scrolled .header__phone {
+
+    color: var(--color-dark);
+
+}
+
+.header__phone:hover {
+
+    color: var(--color-primary);
+
+}
+
+.header__toggle {
+
+    display: none;
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 6px;
+
+}
+
+.header__toggle span {
+
+    width: 28px;
+
+    height: 3px;
+
+    border-radius: 3px;
+
+    background: #fff;
+
+    transition: .3s;
+
+}
+
+.header--scrolled .header__toggle span {
+
+    background: var(--color-dark);
+
+}
