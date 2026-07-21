@@ -1,6 +1,6 @@
 .card{
 
-    background:#fff;
+    background: var(--color-dark-2);
 
     border-radius:var(--radius-md);
 
