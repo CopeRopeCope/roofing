@@ -1,6 +1,8 @@
 .section{
 
-    padding:100px 0;
+    padding:var(--section-spacing) 0;
+
+    position:relative;
 
 }
 
