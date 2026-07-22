@@ -26,13 +26,6 @@ function als_enqueue_assets() {
 	);
 
 	wp_enqueue_style(
-		'als-main',
-		get_template_directory_uri() . '/assets/css/main.css',
-		array(),
-		wp_get_theme()->get( 'Version' )
-	);
-
-	wp_enqueue_style(
 		'als-responsive',
 		get_template_directory_uri() . '/assets/css/responsive.css',
 		array( 'als-main' ),

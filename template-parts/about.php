@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$about_image = get_template_directory_uri() . '/assets/images/about/merdevine.webp';
+$about_image = get_template_directory_uri() . '/assets/images/about/Lim+Pavlovic_radovi.webp';
 ?>
 
 <section class="about">

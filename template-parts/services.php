@@ -73,9 +73,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<ul class="service-card__list">
 
-					<li>Oluci</li>
-					<li>Opšivke</li>
-					<li>Vetar lajsne</li>
+					<li>✔ Oluci</li>
+					<li>✔ Opšivke</li>
+					<li>✔ Vetar lajsne</li>
 
 				</ul>
 
@@ -97,9 +97,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<ul class="service-card__list">
 
-					<li>Termo fasade</li>
-					<li>Dekorativne fasade</li>
-					<li>Sanacija fasada</li>
+					<li>✔ Termo fasade</li>
+					<li>✔ Dekorativne fasade</li>
+					<li>✔ Sanacija fasada</li>
 
 				</ul>
 

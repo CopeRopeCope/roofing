@@ -1,7 +1,7 @@
 .services{
 
     background: var(--color-dark);
-    color: var(--color-white);
+    color:var(--color-white);   
 
 }
 
@@ -24,8 +24,6 @@
     border:1px solid rgba(255,255,255,.08);
 
     transition:var(--transition);
-
-    border:1px solid rgba(255,255,255,.08);
 
 }
 
@@ -99,20 +97,14 @@
     margin-bottom:12px;
 }
 
-.section-description{
+.services .section-description{
 
-    color:#E2E8F0;
+    color:var(--color-text-light);
 
     max-width:700px;
 
     margin:20px auto 60px;
 
     line-height:1.8;
-
-}
-
-.service-card:hover{
-
-    transform:translateY(-8px);
 
 }
