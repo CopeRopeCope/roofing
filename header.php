@@ -2,7 +2,7 @@
 /**
  * Header template.
  *
- * @package ALS_Roofing
+ * @package LimPlus
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
