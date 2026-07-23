@@ -87,9 +87,31 @@ const ALS = {
             'keydown',
             (event) => {
 
-                if (event.key === 'Escape') {
+                if (!this.lightbox.classList.contains('active')) {
 
-                    this.closeLightbox();
+                    return;
+
+                }
+
+                switch (event.key) {
+
+                    case 'Escape':
+
+                        this.closeLightbox();
+
+                        break;
+
+                    case 'ArrowLeft':
+
+                        this.previousImage();
+
+                        break;
+
+                    case 'ArrowRight':
+
+                        this.nextImage();
+
+                        break;
 
                 }
 

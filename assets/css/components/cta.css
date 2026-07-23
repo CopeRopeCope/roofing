@@ -1,0 +1,166 @@
+.cta{
+
+    
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        var(--color-dark),
+        var(--color-dark-2)
+    );
+
+    color:var(--color-white);
+
+}
+
+.cta__content{
+
+    max-width:800px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.cta__title{
+
+    font-size:3rem;
+
+    margin-bottom:24px;
+
+}
+
+.cta__description{
+
+    color:var(--color-text-light);
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.cta__features{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+}
+
+.cta__phone{
+
+    display:block;
+
+    margin-bottom:40px;
+
+    color:var(--color-primary);
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.cta__buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+.cta__glow{
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    filter:blur(140px);
+
+    opacity:.10;
+
+    pointer-events:none;
+
+}
+
+.cta__glow--left{
+
+    top:-180px;
+
+    left:-140px;
+
+}
+
+.cta__glow--right{
+
+    right:-160px;
+
+    bottom:-180px;
+
+}
+.cta__background{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.03) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.03) 1px,
+            transparent 1px
+        );
+
+    background-size:40px 40px;
+
+    opacity:.45;
+
+    pointer-events:none;
+
+}
+
+.cta .container{
+
+    position:relative;
+
+    z-index:2;
+
+}

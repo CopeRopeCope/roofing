@@ -32,7 +32,9 @@
 
     background: var(--color-primary-hover);
 
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+
+    box-shadow:0 16px 40px rgba(249,115,22,.35);
 
 }
 
@@ -46,6 +48,10 @@
 
 .btn--secondary:hover {
 
-    background: rgba(255,255,255,.12);
+    background:rgba(255,255,255,.12);
+
+    transform:translateY(-4px);
+
+    border-color:rgba(255,255,255,.85);
 
 }

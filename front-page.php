@@ -26,6 +26,8 @@ get_header();
 
 	<?php get_template_part( 'template-parts/gallery' ); ?>
 
+	<?php get_template_part( 'template-parts/cta' ); ?>
+
 </main>
 
 <?php get_footer(); ?>
