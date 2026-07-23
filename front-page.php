@@ -22,6 +22,10 @@ get_header();
 
 	<?php get_template_part( 'template-parts/services' ); ?>
 
+	<?php get_template_part( 'template-parts/why-us' ); ?>
+
+	<?php get_template_part( 'template-parts/gallery' ); ?>
+
 </main>
 
 <?php get_footer(); ?>

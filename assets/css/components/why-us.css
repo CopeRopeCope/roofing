@@ -1,0 +1,65 @@
+.why-us{
+
+    background:var(--color-white);
+
+}
+
+.why-us__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:32px;
+
+}
+
+.why-card{
+
+    padding:40px;
+
+    text-align:center;
+
+    background:var(--color-white);
+
+}
+
+.why-card__icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:var(--color-white);
+
+    font-size:36px;
+
+}
+
+.why-card__title{
+
+    margin-bottom:18px;
+
+    font-size:1.5rem;
+
+}
+
+.why-card__text{
+
+    color:var(--color-muted);
+
+    line-height:1.7;
+
+}
