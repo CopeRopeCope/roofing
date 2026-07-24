@@ -12,6 +12,7 @@ const ALS = {
         this.cacheDom();
         this.bindEvents();
         this.stickyHeader();
+        this.initScrollSpy();
     },
 
     cacheDom() {
@@ -29,6 +30,9 @@ const ALS = {
 
         this.previousButton = document.getElementById('gallery-prev');
         this.nextButton = document.getElementById('gallery-next');
+
+        this.sections = document.querySelectorAll('section[id]');
+        this.navLinks = document.querySelectorAll('.nav-link');
 
     },
 
@@ -152,6 +156,52 @@ const ALS = {
             this.header.classList.remove('header--scrolled');
 
         }
+
+    },
+
+    initScrollSpy() {
+
+        if (!this.sections.length || !this.navLinks.length) {
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    const id = entry.target.getAttribute('id');
+
+                    this.navLinks.forEach((link) => {
+
+                        link.classList.remove('active');
+
+                        if (link.getAttribute('href') === '#' + id) {
+
+                            link.classList.add('active');
+
+                        }
+
+                    });
+
+                });
+
+            },
+
+            {
+
+                threshold: 0.45
+
+            }
+
+        );
+
+        this.sections.forEach((section) => observer.observe(section));
 
     },
 

@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="section why-us">
+<section id="why-us" class="section why-us">
 
     <div class="container">
 

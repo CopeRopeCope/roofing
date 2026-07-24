@@ -1,7 +1,6 @@
 <?php
 /**
- * Template Name: Contact Page
- * Description: Contact page template
+ * Contact Page
  *
  * @package LimPlus
  */
@@ -9,7 +8,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+get_header();
 ?>
+
+<main id="primary" class="site-main">
 
 <section class="section contact-page">
 
@@ -22,16 +25,12 @@ if ( ! defined( 'ABSPATH' ) ) {
             </span>
 
             <h1 class="section-title">
-
                 Kontaktirajte nas
-
             </h1>
 
             <p class="section-description">
-
                 Pozovite nas ili pošaljite upit.
                 Rado ćemo odgovoriti na sva pitanja i pripremiti ponudu.
-
             </p>
 
         </div>
@@ -43,9 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h3>Telefon</h3>
 
                 <a href="tel:+381653305499">
-
                     065 330 5499
-
                 </a>
 
             </div>
@@ -55,9 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h3>Email</h3>
 
                 <a href="mailto:info@limplus.rs">
-
                     info@limplus.rs
-
                 </a>
 
             </div>
@@ -67,9 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <h3>Lokacija</h3>
 
                 <p>
-
                     Radimo na teritoriji cele Srbije.
-
                 </p>
 
             </div>
@@ -78,10 +71,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <div class="contact-page__form">
 
-            <!-- Ovde ćemo kasnije ubaciti Contact Form 7 -->
+            <!-- Contact Form 7 -->
 
         </div>
 
     </div>
 
 </section>
+
+</main>
+
+<?php get_footer(); ?>

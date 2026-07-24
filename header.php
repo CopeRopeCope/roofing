@@ -26,6 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php wp_body_open(); ?>
 
+
 <header class="header" id="site-header">
 
 	<div class="container">
@@ -64,18 +65,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<nav class="header__nav">
 
+				<a href="#hero" class="nav-link">Početna</a>
 
-				<a href="#hero">Početna</a>
+				<a href="#process" class="nav-link">Kako radimo</a>
 
-				<a href="#process">Kako radimo</a>
+				<a href="#about" class="nav-link">O nama</a>
 
-				<a href="#about">O nama</a>
+				<a href="#services" class="nav-link">Usluge</a>
 
-				<a href="#services">Usluge</a>
+				<a href="#why-us" class="nav-link">Zašto Lim+</a>
 
-				<a href="#gallery">Galerija</a>
+				<a href="#gallery" class="nav-link">Galerija</a>
 
-				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
+				<a href="/kontakt/" class="nav-link">
 
 					Kontakt
 

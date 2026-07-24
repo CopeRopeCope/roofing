@@ -1,6 +1,6 @@
 <?php
 /**
- * Contact Page
+ * Default Page Template
  *
  * @package LimPlus
  */
@@ -14,7 +14,12 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    <?php get_template_part( 'template-parts/contact-page' ); ?>
+	<?php
+	while ( have_posts() ) :
+		the_post();
+		the_content();
+	endwhile;
+	?>
 
 </main>
 
