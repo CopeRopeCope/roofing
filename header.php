@@ -64,18 +64,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<nav class="header__nav">
 
-				<?php
 
-				wp_nav_menu(
-					array(
-						'theme_location' => 'primary',
-						'container'      => false,
-						'menu_class'     => 'primary-menu',
-						'fallback_cb'    => false,
-					)
-				);
+				<a href="#hero">Početna</a>
 
-				?>
+				<a href="#process">Kako radimo</a>
+
+				<a href="#about">O nama</a>
+
+				<a href="#services">Usluge</a>
+
+				<a href="#gallery">Galerija</a>
+
+				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
+
+					Kontakt
+
+				</a>
 
 			</nav>
 

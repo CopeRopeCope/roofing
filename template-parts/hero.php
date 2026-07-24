@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $hero_image = get_template_directory_uri() . '/assets/images/hero/Lim+Pavlovic_LimeniKrov.webp';
 ?>
 
-<section class="hero">
+<section id="hero" class="hero">
 
 	<div class="container">
 

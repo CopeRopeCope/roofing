@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="section cta">
+<section id="cta" class="section cta">
 
     <div class="container">
             <div class="cta__background"></div>

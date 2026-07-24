@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="process">
+<section id="process" class="section process">
 
 	<div class="container">
 

@@ -1,0 +1,61 @@
+.contact-page{
+
+    background:var(--color-light);
+
+}
+
+.contact-page__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+    margin-bottom:70px;
+
+}
+
+.contact-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-sm);
+
+    text-align:center;
+
+}
+
+.contact-card h3{
+
+    margin-bottom:18px;
+
+}
+
+.contact-card a{
+
+    color:var(--color-primary);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.contact-page__form{
+
+    background:#fff;
+
+    padding:60px;
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-sm);
+
+}

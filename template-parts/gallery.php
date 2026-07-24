@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="section gallery">
+<section id="gallery" class="section gallery">
 
     <div class="container">
 

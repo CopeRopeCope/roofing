@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $about_image = get_template_directory_uri() . '/assets/images/about/Lim+Pavlovic_radovi.webp';
 ?>
 
-<section class="about">
+<section id="about" class="section about">
 
 	<div class="container">
 

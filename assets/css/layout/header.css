@@ -12,7 +12,10 @@
 
     z-index: 1000;
 
-    transition: all .35s ease;
+    transition:
+    background .35s ease,
+    box-shadow .35s ease,
+    padding .35s ease;
     
     padding:20px 0;
 
@@ -74,19 +77,13 @@
 
 }
 
-.header__nav {
+.header__nav{
 
-    display: flex;
+    display:flex;
 
-}
+    align-items:center;
 
-.header__nav ul {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 36px;
+    gap:36px;
 
 }
 
