@@ -1,19 +1,33 @@
 <?php
+/**
+ * Fallback template.
+ *
+ * @package LimPlus
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 get_header();
-
 ?>
 
-<main class="site-main">
+<main id="primary" class="site-main">
 
-    <div class="container">
+    <section class="section">
 
-        <h1>ALS Roofing</h1>
+        <div class="container">
 
-    </div>
+            <h1>Stranica nije pronađena.</h1>
+
+            <p>
+                Ovaj sadržaj trenutno nije dostupan.
+            </p>
+
+        </div>
+
+    </section>
 
 </main>
 
-<?php
-
-get_footer();
+<?php get_footer(); ?>

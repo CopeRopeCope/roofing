@@ -40,7 +40,9 @@ get_header();
 
 				<div class="contact-page__form">
 
-					<!-- Contact Form 7 -->
+					<?php
+					echo do_shortcode( '[contact-form-7 id="0cd0dc2" title="Kontakt forma"]' );
+					?>
 
 				</div>
 
@@ -48,9 +50,18 @@ get_header();
 
 					<div class="contact-info">
 
-						<h3>Telefon</h3>
+						<div class="contact-info__icon">
 
-						<p>
+							<img
+								src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/phone.svg"
+								alt=""
+								aria-hidden="true">
+
+						</div>
+
+						<div>
+
+							<h3>Telefon</h3>
 
 							<a href="tel:+381653305499">
 
@@ -58,15 +69,24 @@ get_header();
 
 							</a>
 
-						</p>
+						</div>
 
 					</div>
 
 					<div class="contact-info">
 
-						<h3>Email</h3>
+						<div class="contact-info__icon">
 
-						<p>
+							<img
+								src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/mail.svg"
+								alt=""
+								aria-hidden="true">
+
+						</div>
+
+						<div>
+
+							<h3>Email</h3>
 
 							<a href="mailto:info@limplus.rs">
 
@@ -74,21 +94,79 @@ get_header();
 
 							</a>
 
-						</p>
+						</div>
 
 					</div>
 
 					<div class="contact-info">
 
-						<h3>Lokacija</h3>
+						<div class="contact-info__icon">
 
-						<p>
+							<img
+								src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/location.svg"
+								alt=""
+								aria-hidden="true">
 
-							Beograd, Srbija
+						</div>
 
-						</p>
+						<div>
+
+							<h3>Područje rada</h3>
+
+							<p>
+
+								Beograd, Novi Beograd, Zemun,
+								Pančevo i cela Srbija po dogovoru.
+
+							</p>
+
+						</div>
 
 					</div>
+
+					<div class="contact-info">
+
+						<div class="contact-info__icon">
+
+							<img
+								src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/clock.svg"
+								alt=""
+								aria-hidden="true">
+
+						</div>
+
+						<div>
+
+							<h3>Radno vreme</h3>
+
+							<p>
+
+								Ponedeljak – Petak<br>
+								08:00 – 17:00
+
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="contact-note">
+
+					<h3>
+
+						Besplatan izlazak na teren
+
+					</h3>
+
+					<p>
+
+						Dolazimo na vašu adresu,
+						vršimo merenje i pripremamo ponudu
+						bez ikakve obaveze.
+
+					</p>
 
 				</div>
 
