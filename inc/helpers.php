@@ -17,7 +17,7 @@ if ( ! function_exists( 'limplus_asset' ) ) {
 	 * @param string $path Asset path.
 	 * @return string
 	 */
-	function limplus_asset( $path ) {
+	function limplus_asset( $path = '' ) {
 
 		return esc_url(
 			get_template_directory_uri() . '/assets/' . ltrim( $path, '/' )

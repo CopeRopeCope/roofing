@@ -1,17 +1,23 @@
-.card{
+/* ==========================================================
+   Card
+   ========================================================== */
 
-    border-radius:var(--radius-md);
+.card {
 
-    box-shadow:var(--shadow-sm);
+    background: #fff;
 
-    transition:var(--transition);
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
 
 }
 
-.card:hover{
+.card:hover {
 
-    transform:translateY(-4px);
+    transform: translateY(-4px);
 
-    box-shadow:var(--shadow-md);
+    box-shadow: var(--shadow-md);
 
-}   
+}

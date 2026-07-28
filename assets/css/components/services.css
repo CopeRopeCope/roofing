@@ -1,110 +1,107 @@
-.services{
+.services {
 
     background: var(--color-dark);
-    color:var(--color-white);   
+    color: var(--color-white);   
 
 }
 
-.services__grid{
+.services__grid {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap:32px;
-
-}
-
-.service-card{
-
-    background:var(--color-dark-2);
-
-    padding:48px;
-
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:var(--transition);
+    gap: 32px;
 
 }
 
-.service-card__icon{
+.service-card {
 
-    width:80px;
+    background: var(--color-dark-2);
 
-    height:80px;
+    padding: 48px;
 
-    font-size:36px;
-
-    margin-bottom:32px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:var(--color-primary);
-
-    color:var(--color-white);
-
-    border-radius:50%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
 }
 
-.service-card__title{
+.service-card__icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    font-size: 36px;
+
+    margin-bottom: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--color-primary);
+
+    color: var(--color-white);
+
+    border-radius: 50%;
+
+}
+
+.service-card__title {
     
-    font-size:1.75rem;
+    font-size: 1.75rem;
 
-    font-weight:700;
+    font-weight: 700;
 
-    margin-bottom:20px;
-
-}
-
-.service-card__description{
-
-    color:#CBD5E1;
-
-    line-height:1.7;
-
-    margin-bottom:24px;
+    margin-bottom: 20px;
 
 }
 
-.service-card__list{
+.service-card__description {
 
-    list-style:none;
+    color: #CBD5E1;
 
-    margin:0;
+    line-height: 1.7;
 
-    padding:0;
+    margin-bottom: 24px;
+
 }
 
-.service-card__list li{
+.service-card__list {
 
-    list-style:none;
+    list-style: none;
 
-    padding:0;
+    margin: 0;
 
-    margin:0;
+    padding: 0;
+}
+
+.service-card__list li {
     
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    gap:10px;
+    gap: 10px;
 
-    margin-bottom:12px;
 }
 
-.services .section-description{
+.service-card__list li:not(:last-child) {
 
-    color:var(--color-text-light);
+    margin-bottom: 12px;
 
-    max-width:700px;
+}
 
-    margin:20px auto 60px;
+.services .section-description {
 
-    line-height:1.8;
+    color: var(--color-text-light);
+
+    max-width: 700px;
+
+    margin: 20px auto 60px;
+
+    line-height: 1.8;
 
 }
