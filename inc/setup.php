@@ -2,22 +2,22 @@
 /**
  * Theme setup.
  *
- * @package ALS_Roofing
+ * @package LimPlus
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! function_exists( 'als_theme_setup' ) ) :
+if ( ! function_exists( 'limplus_theme_setup' ) ) :
 
-	function als_theme_setup() {
+	function limplus_theme_setup() {
 
 		/*
 		 * Translation
 		 */
 		load_theme_textdomain(
-			'alsroofing',
+			'limplus',
 			get_template_directory() . '/languages'
 		);
 
@@ -92,8 +92,8 @@ if ( ! function_exists( 'als_theme_setup' ) ) :
 		 */
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'alsroofing' ),
-				'footer'  => __( 'Footer Menu', 'alsroofing' ),
+				'primary' => __( 'Primary Menu', 'limplus' ),
+				'footer'  => __( 'Footer Menu', 'limplus' ),
 			)
 		);
 
@@ -128,5 +128,5 @@ endif;
 
 add_action(
 	'after_setup_theme',
-	'als_theme_setup'
+	'limplus_theme_setup'
 );

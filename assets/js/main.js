@@ -1,11 +1,11 @@
 /**
- * ALS Roofing Theme
+ * LimPlus Theme
  * Main JavaScript
  */
 
 'use strict';
 
-const ALS = {
+const LIMPLUS = {
 
     init() {
 
@@ -271,5 +271,5 @@ const ALS = {
 
 document.addEventListener(
     'DOMContentLoaded',
-    () => ALS.init()
+    () => LIMPLUS.init()
 );

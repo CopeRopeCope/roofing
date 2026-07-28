@@ -33,28 +33,28 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="gallery__grid">
 
             <div class="gallery__item">
-                <img src="<?php echo esc_url( als_asset( 'images/gallery/LimPlus_krov2.webp' ) ); ?>" alt="Limeni krov">
+                <img src="<?php echo esc_url( limplus_asset( 'images/gallery/LimPlus_krov2.webp' ) ); ?>" alt="Limeni krov">
             </div>
 
             <div class="gallery__item">
-                <img src="<?php echo esc_url( als_asset( 'images/gallery/LimPlus_nadstresnica.webp' ) ); ?>" alt="Montaža nadstresnice">
+                <img src="<?php echo esc_url( limplus_asset( 'images/gallery/LimPlus_nadstresnica.webp' ) ); ?>" alt="Montaža nadstresnice">
             </div>
 
             <div class="gallery__item">
-                <img src="<?php echo esc_url( als_asset( 'images/gallery/LimPlus_paneli2.webp' ) ); ?>" alt="Zidni paneli
+                <img src="<?php echo esc_url( limplus_asset( 'images/gallery/LimPlus_paneli2.webp' ) ); ?>" alt="Zidni paneli
                 ">
             </div>
 
             <div class="gallery__item">
-                <img src="<?php echo esc_url( als_asset( 'images/gallery/LimPlus_Odzak.webp' ) ); ?>" alt="Krov">
+                <img src="<?php echo esc_url( limplus_asset( 'images/gallery/LimPlus_Odzak.webp' ) ); ?>" alt="Krov">
             </div>
 
             <div class="gallery__item">
-                <img src="<?php echo esc_url( als_asset( 'images/gallery/merdevine.webp' ) ); ?>" alt="Oluci">
+                <img src="<?php echo esc_url( limplus_asset( 'images/gallery/merdevine.webp' ) ); ?>" alt="Oluci">
             </div>
 
             <div class="gallery__item">
-                <img src="<?php echo esc_url( als_asset( 'images/gallery/LimPlus_fasada.webp' ) ); ?>" alt="Fasada">
+                <img src="<?php echo esc_url( limplus_asset( 'images/gallery/LimPlus_fasada.webp' ) ); ?>" alt="Fasada">
             </div>
 
         </div>
