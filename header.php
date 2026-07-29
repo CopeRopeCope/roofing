@@ -65,22 +65,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<nav class="header__nav">
 
-				<a href="#hero" class="nav-link">Početna</a>
+				<a href="<?php echo esc_url( home_url( '/#hero' ) ); ?>">
+					Početna
+				</a>
 
-				<a href="#process" class="nav-link">Kako radimo</a>
+				<a href="<?php echo esc_url( home_url( '/#process' ) ); ?>">
+					Kako radimo
+				</a>
 
-				<a href="#about" class="nav-link">O nama</a>
+				<a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">
+					O nama
+				</a>
 
-				<a href="#services" class="nav-link">Usluge</a>
+				<a href="<?php echo esc_url( home_url( '/#services' ) ); ?>">
+					Usluge
+				</a>
 
-				<a href="#why-us" class="nav-link">Zašto Lim+</a>
+				<a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">
+					Zašto Lim+
+				</a>
 
-				<a href="#gallery" class="nav-link">Galerija</a>
+				<a href="<?php echo esc_url( home_url( '/#gallery' ) ); ?>">
+					Galerija
+				</a>
 
-				<a href="/kontakt/" class="nav-link">
-
+				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
 					Kontakt
-
 				</a>
 
 			</nav>

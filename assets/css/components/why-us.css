@@ -1,65 +1,81 @@
-.why-us{
+.why-us {
 
-    background:var(--color-white);
-
-}
-
-.why-us__grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:32px;
+    background: var(--color-white);
 
 }
 
-.why-card{
+.why-us__grid {
 
-    padding:40px;
+    display: grid;
 
-    text-align:center;
+    grid-template-columns: repeat(3, 1fr);
 
-    background:var(--color-white);
-
-}
-
-.why-card__icon{
-
-    width:80px;
-
-    height:80px;
-
-    margin:0 auto 24px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:var(--color-primary);
-
-    color:var(--color-white);
-
-    font-size:36px;
+    gap: 32px;
 
 }
 
-.why-card__title{
+.why-card {
 
-    margin-bottom:18px;
+    padding: 40px;
 
-    font-size:1.5rem;
+    background: var(--color-white);
+
+    text-align: center;
 
 }
 
-.why-card__text{
+.why-card__icon {
 
-    color:var(--color-muted);
+    width: 80px;
 
-    line-height:1.7;
+    height: 80px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+
+    transition: var(--transition);
+
+}
+
+.why-card__icon img {
+
+    transition: var(--transition);
+
+}
+
+.why-card:hover .why-card__icon {
+
+    transform: scale(1.08);
+
+}
+
+.why-card:hover .why-card__icon img {
+
+    transform: scale(1.08);
+
+}
+
+.why-card__title {
+
+    margin-bottom: 18px;
+
+    font-size: 1.5rem;
+
+}
+
+.why-card__text {
+
+    color: var(--color-muted);
+
+    line-height: 1.7;
 
 }

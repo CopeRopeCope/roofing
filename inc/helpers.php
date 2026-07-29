@@ -25,4 +25,10 @@ if ( ! function_exists( 'limplus_asset' ) ) {
 
 	}
 
+	function limplus_icon( $icon ) {
+
+		return limplus_asset( 'images/icons/' . ltrim( $icon, '/' ) );
+
+	}
+
 }

@@ -35,21 +35,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <article class="why-card card">
 
-                <div class="why-card__icon">🛡️</div>
+                <div class="why-card__icon">
+
+                    <img
+                        src="<?php echo limplus_icon( 'quality.svg' ); ?>"
+                        alt=""
+                        aria-hidden="true"
+                        class="icon icon--lg"
+                    >
+
+                </div>
 
                 <h3 class="why-card__title">
-                    Garancija na radove
+                    Kvalitetna izrada
                 </h3>
 
                 <p class="why-card__text">
-                    Kvalitet izvođenja potvrđujemo garancijom na izvedene radove.
+                    Jer garancija može imati pravno značenje. Ako vlasnik firme zaista daje pisanu garanciju – odlično. Ako ne, bolje je koristiti formulaciju koja je sigurna.
                 </p>
 
             </article>
 
             <article class="why-card card">
 
-                <div class="why-card__icon">⏱️</div>
+                <div class="why-card__icon">
+
+                    <img
+                        src="<?php echo limplus_icon( 'clock.svg' ); ?>"
+                        alt=""
+                        aria-hidden="true"
+                        class="icon icon--lg"
+                    >
+
+                </div>
 
                 <h3 class="why-card__title">
                     Poštovanje rokova
@@ -63,10 +81,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <article class="why-card card">
 
-                <div class="why-card__icon">📍</div>
+                <div class="why-card__icon">
+
+                    <img
+                        src="<?php echo limplus_icon( 'location.svg' ); ?>"
+                        alt=""
+                        aria-hidden="true"
+                        class="icon icon--lg"
+                    >
+
+                </div>
 
                 <h3 class="why-card__title">
-                    Radimo širom Srbije
+                    Kompletna usluga
                 </h3>
 
                 <p class="why-card__text">
@@ -77,7 +104,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <article class="why-card card">
 
-                <div class="why-card__icon">🏠</div>
+                <div class="why-card__icon">
+
+                    <img
+                        src="<?php echo limplus_icon( 'roof.svg' ); ?>"
+                        alt=""
+                        aria-hidden="true"
+                        class="icon icon--lg"
+                    >
+
+                </div>
 
                 <h3 class="why-card__title">
                     Kvalitetni materijali
@@ -91,7 +127,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <article class="why-card card">
 
-                <div class="why-card__icon">👷</div>
+                <div class="why-card__icon">
+
+                    <img
+                        src="<?php echo limplus_icon( 'experience.svg' ); ?>"
+                        alt=""
+                        aria-hidden="true"
+                        class="icon icon--lg"
+                    >
+
+                </div>
 
                 <h3 class="why-card__title">
                     Iskusan tim
@@ -105,7 +150,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <article class="why-card card">
 
-                <div class="why-card__icon">💬</div>
+                                <div class="why-card__icon">
+
+                    <img
+                        src="<?php echo limplus_icon( 'phone.svg' ); ?>"
+                        alt=""
+                        aria-hidden="true"
+                        class="icon icon--lg"
+                    >
+
+                </div>
 
                 <h3 class="why-card__title">
                     Besplatna procena

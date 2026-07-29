@@ -36,7 +36,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<article class="service-card card">
 
 				<div class="service-card__icon">
-					🏠
+
+					<img
+						src="<?php echo limplus_icon( 'roof.svg' ); ?>"
+						alt=""
+						aria-hidden="true"
+						class="icon icon--lg"
+					>
+
 				</div>
 
 				<h3 class="service-card__title">
@@ -60,7 +67,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<article class="service-card card">
 
 				<div class="service-card__icon">
-					🛠
+
+					<img
+						src="<?php echo limplus_icon( 'hammer.svg' ); ?>"
+						alt=""
+						aria-hidden="true"
+						class="icon icon--lg"
+					>
+
 				</div>
 
 				<h3 class="service-card__title">
@@ -84,7 +98,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<article class="service-card card">
 
 				<div class="service-card__icon">
-					🧱
+					<img
+						src="<?php echo limplus_icon( 'facade.svg' ); ?>"
+						alt=""
+						aria-hidden="true"
+						class="icon icon--lg"
+					>
 				</div>
 
 				<h3 class="service-card__title">

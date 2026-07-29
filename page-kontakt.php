@@ -78,7 +78,7 @@ get_header();
 						<div class="contact-info__icon">
 
 							<img
-								src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/mail.svg"
+								src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/email.svg"
 								alt=""
 								aria-hidden="true">
 
