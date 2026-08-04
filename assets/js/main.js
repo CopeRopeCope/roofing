@@ -18,7 +18,7 @@ const LIMPLUS = {
     cacheDom() {
 
         this.header = document.querySelector('.header');
-        this.mobileToggle = document.querySelector('.mobile-toggle');
+        this.mobileToggle = document.getElementById('mobile-toggle');
         this.navigation = document.querySelector('.header__nav');
         
         this.galleryItems = document.querySelectorAll('.gallery__item img');
@@ -59,7 +59,7 @@ const LIMPLUS = {
                 () => this.openLightbox(index)
             );
 
-        })
+        });
 
         if (this.closeButton) {
 
@@ -91,6 +91,23 @@ const LIMPLUS = {
             'keydown',
             (event) => {
 
+                if (
+                    event.key === 'Escape' &&
+                    this.navigation.classList.contains('is-open')
+                ) {
+
+                    this.navigation.classList.remove('is-open');
+
+                    this.mobileToggle.classList.remove('is-active');
+
+                    this.mobileToggle.setAttribute('aria-expanded', 'false');
+
+                    document.body.classList.remove('menu-open');
+
+                    return;
+
+                }
+
                 if (!this.lightbox.classList.contains('active')) {
 
                     return;
@@ -119,6 +136,15 @@ const LIMPLUS = {
 
                 }
 
+                if (this.nextButton) {
+
+                    this.nextButton.addEventListener(
+                        'click',
+                        () => this.nextImage()
+                    );
+
+                }
+
             }
         );
 
@@ -130,15 +156,19 @@ const LIMPLUS = {
             );
 
         }
+        if (this.navigation) {
 
-        if (this.nextButton) {
+            this.navigation.querySelectorAll('a').forEach((link) => {
 
-            this.nextButton.addEventListener(
-                'click',
-                () => this.nextImage()
-            );
+                link.addEventListener('click', () => {
 
-        }
+                    this.navigation.classList.remove('is-open');
+                    this.mobileToggle.classList.remove('is-active');
+                    this.mobileToggle.setAttribute('aria-expanded', 'false');
+                    document.body.classList.remove('menu-open');
+                    });
+            });  
+        }     
     },
 
     stickyHeader() {
@@ -211,6 +241,13 @@ const LIMPLUS = {
 
         this.navigation.classList.toggle('is-open');
 
+        this.mobileToggle.setAttribute(
+            'aria-expanded',
+            this.navigation.classList.contains('is-open')
+        );
+
+        document.body.classList.toggle('menu-open');
+
     },
 
     openLightbox(index) {
@@ -228,6 +265,8 @@ const LIMPLUS = {
     closeLightbox() {
 
     this.lightbox.classList.remove('active');
+    
+    this.lightboxImage.src = '';
 
     },
 

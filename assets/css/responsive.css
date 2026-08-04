@@ -74,9 +74,55 @@
 
     /* ---------- Header ---------- */
 
-    .header__actions{
+/* ---------- Header ---------- */
 
-        display:none;
+    .header__actions {
+
+        display: none;
+
+    }
+
+    .header__toggle {
+
+        display: flex;
+
+    }
+
+    .header__nav {
+
+        position: fixed;
+
+        top: 100px;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 24px;
+
+        padding: 40px;
+
+        background: #fff;
+
+        box-shadow: var(--shadow-md);
+
+        z-index: 999;
+
+    }
+
+    .header__nav a {
+
+        color: var(--color-dark);
+
+        font-size: 1.1rem;
+
+    }
+
+    .header__nav.is-open {
+
+        display: flex;
 
     }
 

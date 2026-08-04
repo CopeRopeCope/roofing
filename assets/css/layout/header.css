@@ -54,10 +54,9 @@
 .header__logo {
 
     font-family: 'Montserrat', sans-serif;
-
-    font-size: 30px;
-
+    font-size: 26px;
     font-weight: 800;
+    white-space: nowrap;
 
     color: #fff;
 
@@ -77,19 +76,21 @@
 
 }
 
-.header__nav{
+.header__nav {
 
-    display:flex;
+    display: flex;
 
-    align-items:center;
+    align-items: center;
 
-    gap:36px;
+    gap: 24px;
 
 }
 
 .header__nav a {
 
     position: relative;
+
+    font-size:15px;
 
     color: #fff;
 
@@ -149,6 +150,12 @@
 
 .header__phone {
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
     font-weight: 700;
 
     color: #fff;
@@ -185,23 +192,59 @@
 
 }
 
-.header__toggle span {
+.header__toggle {
 
-    width: 28px;
+    display: none;
 
-    height: 3px;
+    width: 48px;
+    height: 48px;
 
-    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
 
-    background: #fff;
-
-    transition: .3s;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
 
 }
 
-.header--scrolled .header__toggle span {
+.header__toggle-icon {
 
-    background: var(--color-dark);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+
+    transition: opacity .25s ease;
+
+}
+
+.header__toggle-icon--close {
+
+    opacity: 0;
+
+}
+
+.header__toggle.is-active .header__toggle-icon--menu {
+
+    opacity: 0;
+
+}
+
+.header__toggle.is-active .header__toggle-icon--close {
+
+    opacity: 1;
+
+}
+
+.header__toggle img {
+
+    filter: brightness(0) invert(1);
+
+}
+
+.header--scrolled .header__toggle img {
+
+    filter: none;
 
 }
 
@@ -216,3 +259,24 @@
     width:100%;
 
 }
+
+.header__phone img {
+
+    filter: brightness(0) invert(1);
+
+    transition: var(--transition);
+
+}
+
+.header--scrolled .header__phone img {
+
+    filter: none;
+
+}
+
+body.menu-open {
+
+    overflow: hidden;
+
+}
+

@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<a href="<?php echo esc_url( home_url() ); ?>" class="header__logo">
 
-						Lim+ <span>Pavlović</span>
+						NiPeĐo <span>Lim</span>
 
 					</a>
 
@@ -65,31 +65,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<nav class="header__nav">
 
-				<a href="<?php echo esc_url( home_url( '/#hero' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/#hero' ) ); ?>" class="nav-link">
 					Početna
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/#process' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/#process' ) ); ?>" class="nav-link">
 					Kako radimo
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/#about' ) ); ?>" class="nav-link">
 					O nama
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/#services' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/#services' ) ); ?>" class="nav-link">
 					Usluge
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">
-					Zašto Lim+
+				<a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>" class="nav-link">
+					Zašto NiPeĐo Lim
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/#gallery' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/#gallery' ) ); ?>" class="nav-link">
 					Galerija
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="nav-link">
 					Kontakt
 				</a>
 
@@ -103,7 +103,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<span class="phone-icon">
 
-						☎
+						<img
+							src="<?php echo limplus_icon( 'phone.svg' ); ?>"
+							alt=""
+							aria-hidden="true"
+							class="icon icon--sm"
+						>
 
 					</span>
 
@@ -119,14 +124,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Mobile Toggle -->
 
-			<button class="header__toggle"
-			        id="mobile-toggle"
-			        aria-label="Open Menu"
-			        aria-expanded="false">
+			<button
+				class="header__toggle"
+				id="mobile-toggle"
+				aria-label="Otvori meni"
+				aria-expanded="false"
+			>
 
-				<span></span>
-				<span></span>
-				<span></span>
+				<img
+					src="<?php echo limplus_icon( 'menu.svg' ); ?>"
+					class="icon icon--md header__toggle-icon header__toggle-icon--menu"
+					alt=""
+					aria-hidden="true"
+				>
+
+				<img
+					src="<?php echo limplus_icon( 'x.svg' ); ?>"
+					class="icon icon--md header__toggle-icon header__toggle-icon--close"
+					alt=""
+					aria-hidden="true"
+				>
 
 			</button>
 
