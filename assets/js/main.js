@@ -1,5 +1,5 @@
 /**
- * LimPlus Theme
+ * NiPeĐo Lim Theme
  * Main JavaScript
  */
 
@@ -13,21 +13,21 @@ const LIMPLUS = {
         this.bindEvents();
         this.stickyHeader();
         this.initScrollSpy();
+
     },
 
     cacheDom() {
 
         this.header = document.querySelector('.header');
-        this.mobileToggle = document.getElementById('mobile-toggle');
         this.navigation = document.querySelector('.header__nav');
-        
+        this.mobileToggle = document.getElementById('mobile-toggle');
+
         this.galleryItems = document.querySelectorAll('.gallery__item img');
         this.currentImage = 0;
-        
+
         this.lightbox = document.getElementById('gallery-lightbox');
         this.lightboxImage = document.getElementById('gallery-image');
         this.closeButton = document.getElementById('gallery-close');
-
         this.previousButton = document.getElementById('gallery-prev');
         this.nextButton = document.getElementById('gallery-next');
 
@@ -51,7 +51,7 @@ const LIMPLUS = {
             );
 
         }
-        
+
         this.galleryItems.forEach((image, index) => {
 
             image.addEventListener(
@@ -66,6 +66,24 @@ const LIMPLUS = {
             this.closeButton.addEventListener(
                 'click',
                 () => this.closeLightbox()
+            );
+
+        }
+
+        if (this.previousButton) {
+
+            this.previousButton.addEventListener(
+                'click',
+                () => this.previousImage()
+            );
+
+        }
+
+        if (this.nextButton) {
+
+            this.nextButton.addEventListener(
+                'click',
+                () => this.nextImage()
             );
 
         }
@@ -89,110 +107,82 @@ const LIMPLUS = {
 
         document.addEventListener(
             'keydown',
-            (event) => {
-
-                if (
-                    event.key === 'Escape' &&
-                    this.navigation.classList.contains('is-open')
-                ) {
-
-                    this.navigation.classList.remove('is-open');
-
-                    this.mobileToggle.classList.remove('is-active');
-
-                    this.mobileToggle.setAttribute('aria-expanded', 'false');
-
-                    document.body.classList.remove('menu-open');
-
-                    return;
-
-                }
-
-                if (!this.lightbox.classList.contains('active')) {
-
-                    return;
-
-                }
-
-                switch (event.key) {
-
-                    case 'Escape':
-
-                        this.closeLightbox();
-
-                        break;
-
-                    case 'ArrowLeft':
-
-                        this.previousImage();
-
-                        break;
-
-                    case 'ArrowRight':
-
-                        this.nextImage();
-
-                        break;
-
-                }
-
-                if (this.nextButton) {
-
-                    this.nextButton.addEventListener(
-                        'click',
-                        () => this.nextImage()
-                    );
-
-                }
-
-            }
+            (event) => this.handleKeydown(event)
         );
 
-        if (this.previousButton) {
-
-            this.previousButton.addEventListener(
-                'click',
-                () => this.previousImage()
-            );
-
-        }
         if (this.navigation) {
 
             this.navigation.querySelectorAll('a').forEach((link) => {
 
-                link.addEventListener('click', () => {
+                link.addEventListener(
+                    'click',
+                    () => this.closeMobileMenu()
+                );
 
-                    this.navigation.classList.remove('is-open');
-                    this.mobileToggle.classList.remove('is-active');
-                    this.mobileToggle.setAttribute('aria-expanded', 'false');
-                    document.body.classList.remove('menu-open');
-                    });
-            });  
-        }     
+            });
+
+        }
+
+    },
+
+    handleKeydown(event) {
+
+        if (
+            event.key === 'Escape' &&
+            this.navigation &&
+            this.navigation.classList.contains('is-open')
+        ) {
+
+            this.closeMobileMenu();
+            return;
+
+        }
+
+        if (!this.lightbox || !this.lightbox.classList.contains('active')) {
+
+            return;
+
+        }
+
+        switch (event.key) {
+
+            case 'Escape':
+                this.closeLightbox();
+                break;
+
+            case 'ArrowLeft':
+                this.previousImage();
+                break;
+
+            case 'ArrowRight':
+                this.nextImage();
+                break;
+
+        }
+
     },
 
     stickyHeader() {
 
         if (!this.header) {
+
             return;
-        }
-
-        if (window.scrollY > 40) {
-
-            this.header.classList.add('header--scrolled');
-
-        } else {
-
-            this.header.classList.remove('header--scrolled');
 
         }
+
+        this.header.classList.toggle(
+            'header--scrolled',
+            window.scrollY > 40
+        );
 
     },
 
     initScrollSpy() {
 
         if (!this.sections.length || !this.navLinks.length) {
+
             return;
+
         }
 
         const observer = new IntersectionObserver(
@@ -202,16 +192,20 @@ const LIMPLUS = {
                 entries.forEach((entry) => {
 
                     if (!entry.isIntersecting) {
+
                         return;
+
                     }
 
-                    const id = entry.target.getAttribute('id');
+                    const id = '#' + entry.target.id;
 
                     this.navLinks.forEach((link) => {
 
                         link.classList.remove('active');
 
-                        if (link.getAttribute('href') === '#' + id) {
+                        const href = new URL(link.href).hash;
+
+                        if (href === id) {
 
                             link.classList.add('active');
 
@@ -231,15 +225,22 @@ const LIMPLUS = {
 
         );
 
-        this.sections.forEach((section) => observer.observe(section));
+        this.sections.forEach(
+            (section) => observer.observe(section)
+        );
 
     },
 
     toggleMobileMenu() {
 
-        this.mobileToggle.classList.toggle('is-active');
+        if (!this.navigation || !this.mobileToggle) {
+
+            return;
+
+        }
 
         this.navigation.classList.toggle('is-open');
+        this.mobileToggle.classList.toggle('is-active');
 
         this.mobileToggle.setAttribute(
             'aria-expanded',
@@ -250,13 +251,31 @@ const LIMPLUS = {
 
     },
 
+    closeMobileMenu() {
+
+        if (!this.navigation || !this.mobileToggle) {
+
+            return;
+
+        }
+
+        this.navigation.classList.remove('is-open');
+        this.mobileToggle.classList.remove('is-active');
+
+        this.mobileToggle.setAttribute(
+            'aria-expanded',
+            'false'
+        );
+
+        document.body.classList.remove('menu-open');
+
+    },
+
     openLightbox(index) {
 
         this.currentImage = index;
 
-        this.lightboxImage.src = this.galleryItems[index].src;
-
-        this.lightboxImage.alt = this.galleryItems[index].alt;
+        this.updateLightbox();
 
         this.lightbox.classList.add('active');
 
@@ -264,23 +283,19 @@ const LIMPLUS = {
 
     closeLightbox() {
 
-    this.lightbox.classList.remove('active');
-    
-    this.lightboxImage.src = '';
+        this.lightbox.classList.remove('active');
+
+        this.lightboxImage.src = '';
+        this.lightboxImage.alt = '';
 
     },
 
     previousImage() {
 
-        if (this.currentImage === 0) {
-
-            this.currentImage = this.galleryItems.length - 1;
-
-        } else {
-
-            this.currentImage--;
-
-        }
+        this.currentImage =
+            this.currentImage === 0
+                ? this.galleryItems.length - 1
+                : this.currentImage - 1;
 
         this.updateLightbox();
 
@@ -288,24 +303,25 @@ const LIMPLUS = {
 
     nextImage() {
 
-        if (this.currentImage === this.galleryItems.length - 1) {
-
-            this.currentImage = 0;
-
-        } else {
-
-            this.currentImage++;
-
-        }
+        this.currentImage =
+            this.currentImage === this.galleryItems.length - 1
+                ? 0
+                : this.currentImage + 1;
 
         this.updateLightbox();
 
     },
 
     updateLightbox() {
-    this.lightboxImage.src = this.galleryItems[this.currentImage].src;
-    this.lightboxImage.alt = this.galleryItems[this.currentImage].alt;
+
+        this.lightboxImage.src =
+            this.galleryItems[this.currentImage].src;
+
+        this.lightboxImage.alt =
+            this.galleryItems[this.currentImage].alt;
+
     }
+
 };
 
 document.addEventListener(
